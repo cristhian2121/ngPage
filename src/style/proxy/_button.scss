@@ -1,0 +1,23 @@
+@import '../variables';
+
+.actions__button--fill {
+  background-color: $blue-color;
+  border: 1px solid $blue-color;
+  border-radius: 20px;
+  height: 2.5rem;
+  width: 10rem;
+  color: #fff;
+  font-weight: bold;
+  font-size: 0.78rem;
+}
+
+.actions__button--ligth {
+  background-color: #fff;
+  border: 1px solid $blue-color;
+  border-radius: 20px;
+  height: 2rem;
+  width: 8.85rem;
+  color: $blue-color;
+  font-weight: bold;
+  font-size: 0.78rem;
+}

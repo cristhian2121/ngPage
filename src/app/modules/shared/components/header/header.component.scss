@@ -1,6 +1,7 @@
 @import '../../../../../style/variables';
 
 .header {
+  background-image: url('../../../../../assets/Backgrounds/Bg_Header.png');
   margin-top: 2.5rem;
   margin-left: 3.3rem;
   margin-right: 3.3rem;
@@ -19,16 +20,5 @@
     li:nth-child(3) {
       margin: 0;
     }
-    .actions__button {
-      background-color: white;
-      border: 1px solid $blue-color;
-      border-radius: 20px;
-      height: 2rem;
-      width: 8.85rem;
-      color: $blue-color;
-      font-weight: bold;
-      font-size: 0.78rem;
-    }
-
   }
 }
