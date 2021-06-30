@@ -1,0 +1,51 @@
+.hero-wellcome {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 2rem 3.3rem;
+  .hero-wellcome__text {
+    padding-bottom: 3.3rem;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    .wellcome-text {
+      width: min(500px);
+    }
+    .wellcome-text--normal {
+      font-weight: normal;
+    }
+  }
+
+  .hero-wellcome__img img {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+  }
+}
+
+.hero-our {
+  background-color: whitesmoke;
+  display: flex;
+  flex-wrap: wrap;
+
+  .hero-our__img {
+    width: 60%;
+    img {
+      object-fit: cover;
+      width: 100%;
+    }
+  }
+
+  .hero-our__text {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .our-text {
+      padding: 0 4rem;
+      // display: inline-grid;
+      // h1 {
+      //   font-size: 4.3rem;
+      // }
+    }
+  }
+}

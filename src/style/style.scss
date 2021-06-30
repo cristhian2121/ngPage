@@ -1,0 +1,14 @@
+@import './font.scss';
+@import './variables';
+@import './common';
+@import './proxy/proxy.scss';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Fira Sans',sans-serif;
+}

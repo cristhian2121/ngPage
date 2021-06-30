@@ -15,6 +15,11 @@
     "moduleResolution": "node",
     "importHelpers": true,
     "target": "es2015",
+    "paths": {
+      "@styles": ["src/style/*"],
+      "@modules/*": ["src/app/modules/*"]
+      // "@services": ""
+    },
     "module": "es2020",
     "lib": [
       "es2018",
