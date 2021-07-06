@@ -1,0 +1,20 @@
+<div class="table-container">
+  <div class="table-header">
+    <span class="table--title">{{title}}</span>
+  </div>
+  <div class="table-rows">
+    <div class="columns__size">
+      <div class="column" *ngFor="let item of columns">
+        {{item}}
+      </div>
+    </div>
+    <div class="row columns__size" *ngFor="let item of items">
+      <div class="row--item">{{item.Nombre}}</div>
+      <div class="row--item">{{item.Altura}}</div>
+      <div class="row--item">{{item.Peso}}</div>
+      <div class="row--item">{{item.Tipo}}</div>
+      <div class="row--item">{{item.Minimo}}</div>
+      <div class="row--item">{{item.MovimientosAprendidos}}</div>
+    </div>
+  </div>
+</div>

@@ -3,9 +3,17 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-    path:'',
+    path: '',
     loadChildren: () => import('./modules/home/home.module').then(m => m.HomeModule)
-  }
+  },
+  {
+    path: 'pokemon',
+    loadChildren: () => import('./modules/pokemon/pokemon.module').then(m => m.PokemonModule)
+  },
+  {
+    path: '*',
+    redirectTo: ''
+  },
 ];
 
 @NgModule({
