@@ -9,12 +9,17 @@
       </div>
     </div>
     <div class="row columns__size" *ngFor="let item of items">
-      <div class="row--item">{{item.Nombre}}</div>
-      <div class="row--item">{{item.Altura}}</div>
-      <div class="row--item">{{item.Peso}}</div>
-      <div class="row--item">{{item.Tipo}}</div>
-      <div class="row--item">{{item.Minimo}}</div>
-      <div class="row--item">{{item.MovimientosAprendidos}}</div>
+      <div class="row--item">{{item.id}}</div>
+      <div class="row--item">{{item.name}}</div>
+      <div class="row--item">{{item.height}}</div>
+      <div class="row--item">{{item.weight}}</div>
+      <div class="row--item">
+        <span *ngFor="let types of item.types | slice:0:2">-{{types.type.name}} </span>
+      </div>
+      <div class="row--item">{{item.base_experience}}</div>
+      <div class="row--item">
+        <span *ngFor="let move of item.moves | slice:0:2">-{{move.move.name}} </span>
+      </div>
     </div>
   </div>
 </div>

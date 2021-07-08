@@ -8,11 +8,15 @@ import { PokemonRoutingModule } from './pokemon.routing';
 
 
 
+
 @NgModule({
   declarations: [
     PokeListComponent,
     PokeDetailComponent,
     PokeCompareComponent
+  ],
+  providers: [
+    // PokemonService
   ],
   imports: [
     CommonModule,

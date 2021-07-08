@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { IPokemon, Pokemon } from 'src/app/models';
 
 @Component({
   selector: 'app-table',
@@ -7,15 +8,13 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class TableComponent implements OnInit {
 
-  @Input() title: string = '';
-  @Input() items: Array<any> = [];
-  @Input() columns: Array<any> = [];
+  @Input() title = '';
+  @Input() items: Array<IPokemon> = [];
+  @Input() columns: Array<string> = [];
 
   constructor() { }
 
   ngOnInit(): void {
-    console.log('***');
-    console.log('items: ', this.items);
   }
 
 }
